@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        // JavaScript code can be added here if needed
+        function Playsong(){
+            let au = document.getElementById("myAudio");
+            au.play();
+        }
+        function Pausesong(){
+            let au = document.getElementById("myAudio");
+            au.pause();
+        }   
+    </script>
+    <title> Test01 </title>
+    <h1>This's for <mark>my own education</mark></h1>
+    <!-- where i try mark-->
+     <code>This is mostly about code like<br>
+        &lt;b&gt;...&lt;/b&gt;/&lt;ul&gt;...&lt;/ul&gt;/&lt;div&gt;...&lt;/div&gt;</code>
+</head>
+<body>
+<!-- HOW ul ol il works-->
+    <div class ="banner">
+        <b>I love Pizza</b>
+        <h5>Me toooooooooooooo<br>
+        And Everything on sale right now from <del>9.99$</del> to <u>6.99$</u> </h5>
+        <ul>
+            <li>Cheese </li>
+            <li>Pepperoni</li>
+            <li>Hawaian</li>
+            <li>Super Deluxe</li>
+        </ul>
+        <b>Here are my top 3</b>
+        <ol>
+            <li>Cheese</li>
+            <li>Pepperoni</li>
+            <li>Super Deluxe</li><br>
+        </ol>
+    <u><span style="color:crimson;">Ps. I LIKE U MORE THAN PIZZA</span></u>
+    </div>
+    <form id="form1" action="test01.html"> 
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="type yo ur fucking name" autofocus = "autofocus" id="name" name="name" maxlength="10" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="type your fucking Mail" id="email" name="email" required><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <input type="submit" value="Submit"> <button type="reset">Reset</button><br><br>
+            <label for="comments">Comments:</label><br>
+            <textarea name="comments" rows="4" cols="50" placeholder="Enter your comments here" maxlength ="300"></textarea>
+        </fieldset>
+    </form>
+    <form id="form2" action="Research"> 
+        <fieldset>
+            <legend>Customer Research</legend>
+            <p>What is your favorite pizza topping?</p>
+            <div>
+                <label>
+                    <input type="radio"  name="Pizza topping" value="Hawaian">Hawaiian
+                </label>
+                <label>
+                    <input type="radio"  name="Pizza topping" value="Cheese">Cheese
+                </label>
+                <label>
+                    <input type="radio"  name="Pizza topping" value="Pepperoni">Pepperoni
+                </label>
+                <label>
+                    <input type="radio"  name="Pizza topping" value="Super Deluxe">Super Deluxe
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="txtSalary">What is your monthly salary?</label>
+                <input type="number" id="txtSalary" name="txtSalary" disabled="disabled"
+                min="0" max="100000" step="500" value="15000" oninput="salaryOutput.value = txtSalary.value">
+                <output name="salaryOutput" id="salaryOutput"></output>
+                <p>how often do you eat pizza</p>
+                <input type="checkbox" value="Daily">Daily
+                <input type="checkbox" value="Weekly">Weekly
+                <input type="checkbox" value="Monthly">Monthly
+                <input type="checkbox" value="Rarely">Rarely <br>
+                <p>how was ur satisfaction to our Restuarant:</p>
+                <select name="satisfaction" id="satisfaction">
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="1">Very Dissatisfied</option>
+                    <option value="2">Dissatisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Satisfied</option>
+                    <option value="5">Very Satisfied</option>
+                </select><br>
+                <p>what time do u usually eat pizza?</p>
+                <select name="time" id="time" multiple>
+                    <optgroup label="Breakfast">Breakfast</optgroup>
+                    <option value="1">8am</option>
+                    <option value="2">9am</option>
+                    <option value="3">10am</option>
+                    <optgroup label="Lunch">Lunch</optgroup>
+                    <option value="4">11am</option>
+                    <option value="5">12pm</option>
+                    <option value="6">1pm</option>
+                    <option value="7">2pm</option>
+                    <optgroup label="Dinner">Dinner</optgroup>
+                    <option value="8">5pm</option>
+                    <option value="9">6pm</option>
+                    <option value="10">7pm</option>
+                    <option value="11">8pm</option>
+                    <option value="12">9pm</option>
+                    <option value="13">10pm</option>
+                    <optgroup label="Midnight">Midnight</optgroup>
+                    <option value="14">11pm</option>
+                    <option value="15">12am</option>
+                    <option value="16">1am</option>
+                    <option value="17">2am</option>
+                    </select><br><br>
+                <label for="mycolor">Pick your color (for no reason)</label>   
+                <input type="color" id="mycolor" name="mycolor"><br>   
+                <label for="myfile"> Upload your file </label>
+                <input type="file" id="myfile" name="myfile" accept="image/*" multiple ><br>
+                <input type="submit" value="Submit"> <button type="reset">Reset</button><br><br>
+                <!-- if u want mp4,mpeg,webm type video  if weba,mp3 type audio  if u want sum of them can type "image/*,.pdf,.docx" -->
+            </div>
+        </fieldset>
+    </form>
+    <form id="passwprd" action="#">
+        <fieldset>
+            <legend>Password Input</legend>
+            <label for="username">Username:</label>
+            <input type="name" name="Username" required autofocus/><br>
+            <label for="password">Password:</label>
+            <input type="password" name="Password" required/><br>
+            <input type="submit" name="cmdLogin" value="Login">
+            <input type="button" name="cmdCancel" value="Cancel"/>
+        </fieldset>
+    </form>
+    <div><h1>This is basically what our pizza looklike</h1>  
+        <video width="650" height="315" src="https://media.istockphoto.com/id/180617222/th/%E0%B8%A7%E0%B8%B4%E0%B8%94%E0%B8%B5%E0%B9%82%E0%B8%AD/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B9%82%E0%B8%A3%E0%B8%A2%E0%B8%8A%E0%B8%B5%E0%B8%AA%E0%B8%9A%E0%B8%99%E0%B8%9E%E0%B8%B4%E0%B8%8B%E0%B8%8B%E0%B9%88%E0%B8%B2.mp4?s=mp4-640x640-is&k=20&c=rEXqhAZ19ldWmNPYqLxScbVK6fKXXdK3xbh-stN4yog=" 
+        poster="https://tr.rbxcdn.com/180DAY-e8ea57bc0042a71b7b6de1e0d8d551e5/768/432/Image/Webp/noFilter" controls="controls"> </video>
+        <audio controls id="myAudio">
+            <source src="In The Morning - The Grey Room _ Clark Sims (2).mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="Playsong()">Play</button>
+        <button onclick="Pausesong()">Pause</button>
+    </div>
+    <div>
+        <!-- <progress> bar for tasks being completed. 
+        Use <meter> for measurements or levels within a range. (maybe it necessary in future)-->
+        <progress value="70" max="100"> 70% </progress><br>
+        progress<meter value="20" min="0" max="100"> 20 out of 100 </meter>
+    </div>
+<div>
+    <!-- Example Table Section -->
+    <h2>Pizza Orders Table</h2>
+    <table border="1">
+        <tr>
+            <th>Order No.</th>
+            <th>Customer Name</th>
+            <th>Pizza Type</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Somchai</td>
+            <td>Pepperoni</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Karn</td>
+            <td>Cheese</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jane</td>
+            <td>Super Deluxe</td>
+            <td>3</td>
+        </tr>
+    </table>
+    </div>
+
+    <p>นี่คือ <span style="color: red;">คำนี้สีแดง</span> และนี่คือคำปกติ </p>
+
+</body>
+
+</html>
