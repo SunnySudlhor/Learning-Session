@@ -1,6 +1,24 @@
-div{
+    div{
     color: rgb(0, 0, 0);
-    background-color: rgb(227, 220, 204);
+    background-color: rgb(217, 208, 187);
     font-size: 20px;
     border: 2px solid rgb(105, 105, 58);
+}
+    p {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+    a:hover{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+}
+    p:first-line {
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.583);    
 }

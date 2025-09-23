@@ -20,11 +20,36 @@
                 border: 2px solid rgb(230, 0, 0);
                 padding: 10px;
                 margin: 10px;
+                margin-bottom: 10px;
                 background-color: rgb(250, 130, 18);
-                border-radius: 15px;}
+                border-radius: 20px;}
+        </style>
+        <style>
+            h1{
+                color: rgb(0, 0, 0);
+                text-align: center;
+                font-family: 'Arial', sans-serif;
+                font-size: 40px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+        </style>
+        <style>
+            fieldset{
+                border: 2px solid rgb(0, 0, 0);
+                padding: 10px;
+                margin: 10px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 20px;
+            }
+        </style>
+        <style>
+            .msgwarn {
+                color: red;
+                font-weight: bold;
+            }
         </style>
     <title> Test01 </title>
-    <h1>This's for <mark>my own education</mark></h1>
+    <h1>This's for<br> <mark>my own education</mark></h1>
     <!-- where i try mark-->
      <code>This is mostly about code like<br>
         &lt;b&gt;...&lt;/b&gt;/&lt;ul&gt;...&lt;/ul&gt;/&lt;div&gt;...&lt;/div&gt;</code>
@@ -39,7 +64,7 @@
             <li>Cheese </li>
             <li>Pepperoni</li>
             <li>Hawaian</li>
-            <li>Super Deluxe</li>
+            <li class="msgwarn">Super Deluxe</li>
         </ul>
         <b>Here are my top 3</b>
         <ol>
@@ -162,8 +187,8 @@
     </div>
 <div>
     <!-- Example Table Section -->
-    <h2>Pizza Orders Table</h2>
-    <table border="1">
+    <h2 style="text-align:center">Pizza Orders Table</h2>
+    <table border="10" style="width:100%; border-collapse: collapse; text-align: center;">
         <tr>
             <th>Order No.</th>
             <th>Customer Name</th>
