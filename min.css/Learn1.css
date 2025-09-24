@@ -13,12 +13,19 @@
         padding: 10px;
         margin: 10px;
         border-radius: 15px;
-    }
+    }                         
+    a{
+        color: rgb(48, 10, 160);
+        text-decoration: underline;
+        padding: 5px;
+        border-radius: 5px;
+    }      
     a:hover{
         color: rgb(0, 0, 0);
         background-color: rgb(255, 255, 255);
+        text-decoration: none;
 }
     p:first-line {
         font-weight: bold;
-        color: rgba(0, 0, 0, 0.583);    
-}
+        color: rgba(0, 0, 0, 0.583); 
+}   

@@ -16,6 +16,39 @@
     </script>
     <!--WHERE I TRY CSS INTERNAL STYLE-->
         <style type="text/css">
+            input[type="text"], input[type="email"], input[type="date"], textarea {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+            input[type="submit"], button, input[type="button"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 40px;
+                cursor: pointer;
+                background-color: #45a049;
+            }
+            input[type="submit"]:hover,
+            input[type="button"]:hover,
+            button:hover {
+                background-color: #3553b3;
+            }
+            body{
+                background-color: rgb(253, 232, 198);
+                margin: 20px;
+                padding: 20px;
+            }
+            p{
+                font-family: 'Comic Sans MS', sans-serif;
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                text-align: center;
+            }
             div{
                 border: 2px solid rgb(230, 0, 0);
                 padding: 10px;
@@ -23,8 +56,6 @@
                 margin-bottom: 10px;
                 background-color: rgb(250, 130, 18);
                 border-radius: 20px;}
-        </style>
-        <style>
             h1{
                 color: rgb(0, 0, 0);
                 text-align: center;
@@ -32,8 +63,6 @@
                 font-size: 40px;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             }
-        </style>
-        <style>
             fieldset{
                 border: 2px solid rgb(0, 0, 0);
                 padding: 10px;
@@ -41,8 +70,6 @@
                 background-color: rgb(255, 255, 255);
                 border-radius: 20px;
             }
-        </style>
-        <style>
             .msgwarn {
                 color: red;
                 font-weight: bold;
@@ -60,7 +87,7 @@
         <b>I love Pizza</b>
         <h5>Me toooooooooooooo<br>
         And Everything on sale right now from <del>9.99$</del> to <u>6.99$</u> </h5>
-        <ul>
+        <ul style="list-style-type:square">
             <li>Cheese </li>
             <li>Pepperoni</li>
             <li>Hawaian</li>
@@ -78,11 +105,13 @@
         <fieldset>
             <legend>Personal Information</legend>
             <label for="name">Name:</label>
-            <input type="text" placeholder="type yo ur fucking name" autofocus = "autofocus" id="name" name="name" maxlength="10" required><br><br>
+            <input type="text" placeholder="type yo ur fucking na=me" autofocus = "autofocus" id="name" name="name" maxlength="10" required><br><br>
             <label for="email">Email:</label>
             <input type="email" placeholder="type your fucking Mail" id="email" name="email" required><br><br>
             <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required><br><br>
+            <input type="date" id="dob" name="dob" required>
+            <label for="age">Age</label>
+            <input type="number" name="age" min="1" max="100"><br><br>
             <input type="submit" value="Submit"> <button type="reset">Reset</button><br><br>
             <label for="comments">Comments:</label><br>
             <textarea name="comments" rows="4" cols="50" placeholder="Enter your comments here" maxlength ="300"></textarea>
@@ -159,7 +188,7 @@
             </div>
         </fieldset>
     </form>
-    <form id="passwprd" action="#">
+    <form id="password" action="#">
         <fieldset>
             <legend>Password Input</legend>
             <label for="username">Username:</label>
